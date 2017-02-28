@@ -1,0 +1,90 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "微软雅黑";
+    font-size: 14px;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.leaf-overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    background: #000;
+    opacity: 0.6;
+    z-index: 99;
+}
+.leaf-tipsWindown{
+    position: fixed;
+    left: 800px;
+    top: 300px;
+    width: 400px;
+    height: 190px;
+    background:#fff;
+    border-radius: 2px;
+    z-index: 999;
+    font-size: 14px;
+}
+.leaf-tipsWindown .tip-title{
+    height: 35px;
+    font-size: 16px;
+    line-height: 35px;
+    padding-left: 10px;
+    background:#3982c1;
+    color: #fff;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    /*cursor: move;*/
+}
+.leaf-tipsWindown .tip-title .close{
+    position: absolute;
+    right:6px;
+    display: inline-block;
+    color: #ccc;
+}
+.leaf-tipsWindown .tip-title .close:hover{
+    color:#fff;
+}
+.leaf-tipsWindown .tip-title .iconfont{
+    font-size: 22px;
+}
+.leaf-tipsWindown .tip-content{
+    padding: 22px;
+    height: 60px;
+    color: #2d2727;
+}
+.leaf-tipsWindown .tip-btn{
+    height: 48px;
+    text-align: center;
+    line-height: 40px;
+}
+.leaf-tipsWindown .tip-btn a{
+    padding: 6px 12px;
+    border-radius: 4px;
+    color: #ccc;
+    font-size: 16px;
+    background: #438e43;
+}
+.leaf-tipsWindown .tip-btn a .iconfont{
+    padding-right: 3px;
+}
+.leaf-tipsWindown .tip-btn a:hover{
+    color:#fff;
+    background:#359835;
+}
+.noSelect{
+    cursor:move;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    -o-user-select:none;
+    -khtml-user-select:none;
+    user-select:none;
+}
